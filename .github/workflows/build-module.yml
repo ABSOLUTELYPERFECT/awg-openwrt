@@ -49,11 +49,11 @@ jobs:
     needs: generate-config
     strategy:
       matrix:
-          pkgarch: aarch64_cortex-a53
-          subtarget: filogic
-          tag: 24.10.1
-          target: 	mediatek
-          vermagic: f2c63d42896f12da2b55f2c2b626e7be-r1
+          pkgarch: [aarch64_cortex-a53]
+          subtarget: [filogic]
+          tag: [24.10.1]
+          target: [mediatek]
+          vermagic: [f2c63d42896f12da2b55f2c2b626e7be-r1]
       fail-fast: false
 
     steps:
